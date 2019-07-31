@@ -32,7 +32,7 @@
                     console.log(datos);
                     if (datos['estado']){
                         var tamano = (datos['nivel'] * 300) / 100;
-                        $(".valor_nivel span").html(tamano.toFixed(2));
+                        $(".valor_nivel span").html(datos['nivel'].toFixed(2));
                         $(".tanque .agua").css("height", tamano+"px");
                     }
                 },
